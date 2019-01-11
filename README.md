@@ -14,7 +14,7 @@ Debug Easily and quickly some PHP code without installing anything
 ### Output var on page and stop execution
 	ddd($var, $context);
 
-### Output var in the javascript console of your navigator
+### Output var in the javascript console of your browser
 	dc($var, $context);
 
 *(Context is optional).*
