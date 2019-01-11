@@ -44,6 +44,6 @@ $users = [
 dc($users, '$users'); // Be sure to use simple quotes if you want to output the variable name in context param
 ```
 
-Will produce in Chrome Console :
+Will give this in Chrome's Console:
 
 ![Result](https://github.com/CharlieEtienne/fancy-php-debug/blob/master/result.PNG)
