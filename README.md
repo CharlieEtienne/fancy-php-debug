@@ -9,34 +9,40 @@ Debug Easily and quickly some PHP code without installing anything
 ## How to use
 
 ### Output var on page
-	dd($var, $context);
+```php
+dd($var, $context);
+```
 
 ### Output var on page and stop execution
-	ddd($var, $context);
+```php
+ddd($var, $context);
+```
 
 ### Output var in browser's console
-	dc($var, $context);
+```php
+dc($var, $context);
+```
 
 *(Context is optional).*
 
 ## Example of use (Debug in Console)
 
-This code :
+This code:
+```php
+<?php
+$users = [
+	"1" => [
+		"id"   => "1",
+		"name" => "John Doe",
+	],
+	"2" => [
+		"id"   => "2",
+		"name" => "Jane Doe",
+	]
+];
 
-	<?php
-	$users = [
-		"1" => [
-			"id"   => "1",
-			"name" => "John Doe",
-		],
-		"2" => [
-			"id"   => "2",
-			"name" => "Jane Doe",
-		]
-	];
-	
-	dc($users, '$users'); // Be sure to use simple quotes if you want to output the variable name in context param
-	
+dc($users, '$users'); // Be sure to use simple quotes if you want to output the variable name in context param
+```
 
 Will produce in Chrome Console :
 
