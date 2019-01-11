@@ -1,19 +1,19 @@
 <?php
 
-//Affiche dans la page le contenu mis en forme de $data 
+// Display content of $data in a page
 function dd($data, $context = 'Debug' ) {
 	return highlight_string($context . " : \n" . "<?php\n\$data =\n" . var_export($data, true) . ";\n?>");
 }
 
 
-//Affiche dans la page le contenu mis en forme de $data et interrompt l'éxécution
+// Display content of $data in a page AND stop execution
 function ddd($data, $context = 'Debug' ) {
 	echo (highlight_string($context . " : \n" . "<?php\n\$data =\n" . var_export($data, true) . ";\n?>"));
 	die();
 }
 
 
-//Affiche dans la console le contenu mis en forme de $data
+// Display content of $data in browser's console
 function dc($data, $context = '' ){
 	ob_start();
 	$output  = 'console.group("%c Debug : " + "%c' . $context . '", "color: #676e8a; font-size: 16px;","color: #a6accd; font-size: 16px;");';
