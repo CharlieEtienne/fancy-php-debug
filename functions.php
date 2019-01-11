@@ -1,3 +1,5 @@
+<?php
+
 //Affiche dans la page le contenu mis en forme de $data 
 function dd($data, $context = 'Debug' ) {
 	return highlight_string($context . " : \n" . "<?php\n\$data =\n" . var_export($data, true) . ";\n?>");
