@@ -2,13 +2,11 @@
 Debug Easily and quickly some PHP code without installing anything
 
 ## Install and setup
------------------
 
 1. Copy all code from [functions.php](https://github.com/CharlieEtienne/fancy-php-debug/blob/master/functions.php) in a php file (i.e. functions.php in WordPress)
 2. (Optionnal) Copy all code from [style.css](https://github.com/CharlieEtienne/fancy-php-debug/blob/master/style.css) in your css to make output look better
 
 ## How to use
------------------
 
 ### Output var on page
 	dd($var, $context);
@@ -22,7 +20,6 @@ Debug Easily and quickly some PHP code without installing anything
 *(Context is optional).*
 
 ## Example of use (Debug in Console)
------------------
 
 This code :
 
